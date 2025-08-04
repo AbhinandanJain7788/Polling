@@ -103,7 +103,7 @@ app.use(cors());
 
 const io = new Server(server, {
   cors: {
-    origin: "*",
+    origin: "https://polling-lpda.vercel.app/",
     methods: ["GET", "POST"],
   },
 });
@@ -196,3 +196,4 @@ io.on("connection", (socket) => {
 server.listen(5000, () => {
   console.log("✅ Server running at http://localhost:5000");
 });
+
